@@ -5,7 +5,6 @@
 	<groupId>wang.igood</groupId>
 	<artifactId>gmvc</artifactId>
 	<version>0.0.7</version>
-	<packaging>jar</packaging>
 	<name>gmvc</name>
 	<url>http://maven.apache.org</url>
 
@@ -131,6 +130,13 @@
 				<directory>${project.basedir}/src/main/resources</directory>
 				<targetPath>${project.build.outputDirectory}/</targetPath>
 			</resource>
+			<resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <includes>
+                    <include>**/*.*</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
 		</resources>
 	</build>
 </project>
